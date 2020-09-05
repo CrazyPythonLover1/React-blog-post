@@ -16,12 +16,12 @@ import {
 
 function App() {
   return (
-    <React.Fragment>
-      <Container maxWidth="sm">
+    <div className="App">
+      <Container  maxWidth="sm">
        <Router>
          <Switch>
            <Route path="/blog">
-            <Blog/>
+            <Blog />
            </Route>
            <Route path="/post/:postId">
              <PostDetail></PostDetail>
@@ -32,7 +32,7 @@ function App() {
          </Switch>
        </Router>
       </Container>
-    </React.Fragment>
+    </div>
   );
 }
 

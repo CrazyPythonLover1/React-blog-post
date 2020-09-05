@@ -10,7 +10,7 @@ const Blog = () => {
     },[])
     
     return (
-        <div>
+        <div >
            {
                post.map(post => <Post post={post}></Post>)
            }

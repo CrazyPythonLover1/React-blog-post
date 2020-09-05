@@ -28,8 +28,8 @@ const Post = ({post}) => {
 
    
     return (
-        <div>
-            <h6> </h6>
+        <div style={{marginTop:"20px"}} >
+        
             <Card className={classes.root}>
                 <CardActionArea>
                     
