@@ -4,6 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Blog from './components/Blog/Blog';
+import PostDetail from './components/PostDetail/PostDetail'
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,9 @@ function App() {
          <Switch>
            <Route path="/blog">
             <Blog/>
+           </Route>
+           <Route path="/post/:postId">
+             <PostDetail></PostDetail>
            </Route>
            <Route path="/">
             <Blog/>
