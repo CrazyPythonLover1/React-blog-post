@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Blog from './components/Blog/Blog';
 import PostDetail from './components/PostDetail/PostDetail'
+import NavBar from './components/NavBar/NavBar';
 
 import {
   BrowserRouter as Router,
@@ -21,12 +22,14 @@ function App() {
        <Router>
          <Switch>
            <Route path="/blog">
+             <NavBar></NavBar>
             <Blog />
            </Route>
            <Route path="/post/:postId">
              <PostDetail></PostDetail>
            </Route>
-           <Route path="/">
+           <Route exact path="/">
+             <NavBar/>
             <Blog/>
            </Route>
          </Switch>
