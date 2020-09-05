@@ -12,7 +12,6 @@ const PostDetail = () => {
         .then(data => setPost(data))
 
     },[])
-console.log(post);
     return (
         <div style={{color: 'white'}}>
             <h3> Post Id: {postId}</h3>
