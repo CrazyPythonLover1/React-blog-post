@@ -28,27 +28,27 @@ const Post = ({post}) => {
 
    
     return (
-        <div style={{marginTop:"20px"}} >
+        <div style={{marginTop:"40px",display: "flex",justifyContent: "center"}} >
         
             <Card className={classes.root}>
                 <CardActionArea>
                     
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            {title.substring(0, 30)}
+                            {title}
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            {body.substring(0,60)}
+                            {body}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
+                    <Button variant="contained" color="secondary">
                     Share
                     </Button>
-                     <Link to={`/post/${id}`}>
+                     <Link to={`/post/${id}`} style={{textDecoration:"none"}}>
                         <Button size="small" color="secondary">
-                        See More
+                        See More...
                         </Button>
                     </Link> 
                     {/* <Button onclick={()=>handleClick(id)} size="small" color="secondary">
