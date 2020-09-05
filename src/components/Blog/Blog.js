@@ -12,7 +12,7 @@ const Blog = () => {
     return (
         <div>
            {
-               post.map(post => <h1> { post.title} </h1>)
+               post.map(post => <Post post={post}></Post>)
            }
         </div>
     );
