@@ -26,10 +26,11 @@ function App() {
             <Blog />
            </Route>
            <Route path="/post/:postId">
+           <NavBar></NavBar>
              <PostDetail></PostDetail>
            </Route>
            <Route exact path="/">
-             <NavBar/>
+           <NavBar></NavBar>
             <Blog/>
            </Route>
          </Switch>

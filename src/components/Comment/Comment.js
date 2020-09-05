@@ -41,7 +41,7 @@ const Comment = ({postId}) => {
                             <Avatar alt="MIF" src={pictures[idx]} />
                             <h3> {comment.name} </h3>
                         </div>
-                        <p> Post Id: {comment.postId} </p>
+                        <p style={{color:"#880e4f"}}> Post Id: {comment.postId} </p>
                         <p>{comment.body}</p>
                     </div>
                 )

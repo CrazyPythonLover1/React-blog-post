@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./PostDetail.css"
 import { useParams } from 'react-router-dom';
 import Comment from '../Comment/Comment';
 
@@ -14,9 +15,13 @@ const PostDetail = () => {
     },[])
     return (
         <div style={{color: 'white'}}>
-            <h3> Post Id: {postId}</h3>
-            <h1> {post.title} </h1>
-            <p> {post.body}  </p>
+            <div className="post">
+                <h3  style={{color:"#880e4f",textAlign:"center"}}> Post Id: {postId}</h3>
+                <h3> Post Title: </h3>
+                <h1> {post.title} </h1>
+                <h3> Description: </h3>
+                <p> {post.body}  </p>
+            </div>
             <Comment postId={postId}/>
         </div>
     );

@@ -1,0 +1,10 @@
+.post{
+    background:white;
+    color: #79b3f4;
+    padding:1rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+.post p{
+    font-size: 1.3rem;
+}
