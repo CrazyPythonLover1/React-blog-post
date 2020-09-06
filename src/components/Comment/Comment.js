@@ -42,6 +42,7 @@ const Comment = ({postId}) => {
                             <h3> {comment.name} </h3>
                         </div>
                         <p style={{color:"#880e4f"}}> Post Id: {comment.postId} </p>
+                        <p> Email: {comment.email} </p>
                         <p>{comment.body}</p>
                     </div>
                 )
