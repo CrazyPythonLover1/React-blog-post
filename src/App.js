@@ -18,7 +18,6 @@ import {
 function App() {
   return (
     <div className="App">
-      <Container  maxWidth="sm">
        <Router>
          <Switch>
            <Route path="/blog">
@@ -35,7 +34,6 @@ function App() {
            </Route>
          </Switch>
        </Router>
-      </Container>
     </div>
   );
 }

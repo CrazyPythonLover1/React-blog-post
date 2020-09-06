@@ -14,7 +14,7 @@ const PostDetail = () => {
 
     },[])
     return (
-        <div style={{color: 'white'}}>
+        <div style={{color: 'white',margin:'0 auto',width:'600px',}}>
             <div className="post">
                 <h3  style={{color:"#880e4f",textAlign:"center"}}> Post Id: {postId}</h3>
                 <h3> Post Title: </h3>
